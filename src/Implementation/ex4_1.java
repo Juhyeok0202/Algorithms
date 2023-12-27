@@ -1,4 +1,4 @@
 package Implementation;
 
-public class ex4_1 {
+public class ex4_1{
 }
