@@ -1,9 +1,6 @@
 package Greedy.백준;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /*
 <요구사항>
@@ -34,21 +31,19 @@ public class p_16435 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int l = sc.nextInt();
+        int[] h = new int[n];
 
-        List<Integer> h = new ArrayList<>();
         for (int i = 0; i < n; ++i) {
-            h.add(sc.nextInt());
+            h[i]=sc.nextInt();
         }
-        h.sort(Comparator.naturalOrder()); // 오름차순 정렬(아직까진 정렬은 필수라고 생각됨)
-        int index=0;
-        while(index < h.size()){
-            if(h.get(index++)<=l){ // 작거나 같은 수가 있는가?
-                l++;
-            }else{
-                break;
-            }
+
+        Arrays.sort(h); //오름차순
+        int size=h.length;
+        for(int i=0; i<size; ++i) {
+            if(l < h[i]) break;
+            ++l;
         }
-        sc.close();
+
         System.out.println(l);
     }
 }
