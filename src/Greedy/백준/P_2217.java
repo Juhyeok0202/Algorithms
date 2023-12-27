@@ -1,5 +1,8 @@
 package Greedy.백준;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
@@ -31,13 +34,14 @@ k개 루프로 w중량 물체 ==> 각 로프에 걸리는 중량 w/k
 1T: 항상 모든 로프를 사용하려고 했음
  */
 public class P_2217 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
         Integer[] ropes = new Integer[n];
 
         for (int i = 0; i < n; ++i) {
-            ropes[i] = sc.nextInt();
+            ropes[i] = Integer.parseInt(br.readLine());
         }
 
         Arrays.sort(ropes, Collections.reverseOrder()); //내림차순 정렬
