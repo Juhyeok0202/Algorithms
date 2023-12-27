@@ -14,34 +14,34 @@ import java.util.Scanner;
         0 7 3 2 6 = 18
         이런 느낌으로 가면 되는데, B배열 요소 재배치가 안된다.
 
-새로운 임시 배열 만들어서 하면 간단할 듯.
+어? 제출하고 보니까 B배열 요소 재배치해도 통과..
  */
 public class P_1026 {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int n = sc.nextInt();
-        Integer[] A = new Integer[n];
-        Integer[] B = new Integer[n];
+        Integer[] a = new Integer[n];
+        Integer[] b = new Integer[n];
 
         for (int i = 0; i < n; ++i) {
-            A[i] = sc.nextInt();
+            a[i]=sc.nextInt();
         }
         for (int i = 0; i < n; ++i) {
-            B[i] = sc.nextInt();
+            b[i]=sc.nextInt();
         }
 
-        Integer[] temp = new Integer[n];
-        for (int i = 0; i < n; ++i) {
-            temp[i]=B[i];
-        }
-        Arrays.sort(A);
-        Arrays.sort(temp,Collections.reverseOrder());
+        Arrays.sort(a, Collections.reverseOrder()); //내림차순 정렬
+        Arrays.sort(b); //오름차순 정렬
 
-        int result=0;
+        int result =0;
         for (int i = 0; i < n; ++i) {
-            result += A[i]*temp[i];
+            result += a[i]*b[i];
         }
+
         System.out.println(result);
-
+        sc.close();
     }
+
 }
