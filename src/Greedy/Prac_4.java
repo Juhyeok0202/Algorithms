@@ -2,7 +2,7 @@ package Greedy;
 
 import java.util.Scanner;
 
-public class prac_4 {
+public class Prac_4 {
     static int  result =0;
 
     public static void main(String[] args) {
