@@ -51,5 +51,7 @@ public class P_2217 {
             maxWeight = Math.max(maxWeight,ropes[i]*(i+1));
         }
         System.out.println(maxWeight);
+
+
     }
 }

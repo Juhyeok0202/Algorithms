@@ -2,7 +2,7 @@ package Greedy;
 
 import java.util.Scanner;
 
-public class ex3_1 {
+public class Ex3_1 {
     public static void main(String[] args) {
         long beforeTime = System.currentTimeMillis();
 

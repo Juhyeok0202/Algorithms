@@ -15,7 +15,14 @@ package sorting;
 N: 데이터 개수
 K: 데이터 중 최댓값
 
+😄계수 정렬에 비해서 동작은 느리지만, 처리할 수 있는 정수의 크기가 더 큰.
+그리고 사실상 현존하는 정렬 알고리즘 중에서 계수 정렬 만큼이나 가장 빠른
+기수 정렬(Radix Sort)가 있다.
 
+[공간복잡도 문제점]
+데이터가 0과 999,999. 단 2개만 존재한다고 가정하자.
+이 때에도 계수 리스트(배열)의 크기는 1,000,000 크기가 되도록 선언해야함.
+즉, 동일한 값을 가지는 데이터가 여러 개 등장할 때 적합.]-
 
  */
 public class CountSort_ex {
@@ -36,7 +43,7 @@ public class CountSort_ex {
         int listSize = data.length;
         count = new int[findMax()+1];
 
-        for (int i = 0; i < data.length; ++i) {
+        for (int i = 0; i < data.length; ++i) { // N
             count[data[i]]++;
         }
 

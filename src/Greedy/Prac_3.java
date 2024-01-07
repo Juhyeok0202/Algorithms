@@ -15,12 +15,9 @@ package Greedy;
 
  */
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
 import java.util.Scanner;
 
-public class prac_3 {
+public class Prac_3 {
     public static void main(String[] args) {
 
         /*

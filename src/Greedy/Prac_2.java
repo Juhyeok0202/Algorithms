@@ -29,7 +29,7 @@ Idea
 위 과정을 반복한다. 사실상 0과 1번째 인덱스만이 필요한 것 같다는 생각이 든다.
 
  */
-public class prac_2 {
+public class Prac_2 {
     public static void main(String[] args) {
         long beforeTime = System.currentTimeMillis();
  /*

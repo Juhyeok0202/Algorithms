@@ -4,17 +4,17 @@ package BFS_DFS;
 이해를 위한 간단한 DFS 구현 예제
 Adjacency List 방식
  */
-public class ex5_8 {
+public class Ex5_8 {
     static boolean[] visited = new boolean[9];
     static int[][] graph = {{},
-                            {2,3,8},
-                            {1,7},
-                            {1,4,5},
-                            {3,5},
-                            {3,4},
-                            {7},
-                            {2,6,8},
-                            {1,7}};
+            {2,3,8},
+            {1,7},
+            {1,4,5},
+            {3,5},
+            {3,4},
+            {7},
+            {2,6,8},
+            {1,7}};
     public static void main(String[] args) {
         dfs(graph,1,visited);
     }

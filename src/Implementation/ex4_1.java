@@ -40,11 +40,11 @@ public class ex4_1 {
         int current_y=1;
 
         /* 행동 횟수만큼 진행 */
-        for (int i = 0; i < move.size(); ++i) {
-            if(move.get(i).equals("R") && current_y < n) current_y++;
-            if (move.get(i).equals("L") && current_y > 1) current_y--;
-            if (move.get(i).equals("U") && current_x > 1) current_x--;
-            if (move.get(i).equals("D") && current_x < n) current_x++;
+        for (String action : move) {
+            if(action.equals("R") && current_y < n) current_y++;
+            if (action.equals("L") && current_y > 1) current_y--;
+            if (action.equals("U") && current_x > 1) current_x--;
+            if (action.equals("D") && current_x < n) current_x++;
         }
 
         System.out.println(current_x+" "+current_y);

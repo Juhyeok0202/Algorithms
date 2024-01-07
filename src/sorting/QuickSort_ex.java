@@ -9,6 +9,8 @@ package sorting;
 -pivot 설정을 미리 명시해주어야함.
 -pivot 설정하고 리스트를 분할하는 방법에 따라 여러 가지 퀵 정렬
 -아래 소스 코드에서는 Hoare Partition 방식을 기준으로 퀵 정렬 구현
+- O(NlogN)
+- ⚠️Worst Case => O(N*N) : '이미 데이터가 정렬되어 있는 경우 -> Insertion Sorting을 사용하면 좋음'
 
 [Hoare Partition]
 1. 리스트에서 첫 번째 데이터를 pivot으로 설정

@@ -3,6 +3,7 @@ package Implementation;
 import java.util.Scanner;
 
 /*
+115page
 <요구사항>
 체스판 규격: 8x8 좌표평면
  a b . . h
